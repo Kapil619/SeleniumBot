@@ -1,5 +1,7 @@
 from selenium import webdriver
+from selenium.webdriver.common.by import By
 import booking.constants as const
+
 
 
 class Booking(webdriver.Chrome):
@@ -16,3 +18,9 @@ class Booking(webdriver.Chrome):
 
     def land_first_page(self):
         self.get(const.BASE_URL)
+
+    def change_currency(self,currency=None):
+        currency_element= self.find_element(by=By.XPATH, value='//*[@id="b2indexPage"]/div[2]/div/div/header/nav[1]/div[2]/span[1]/button')
+        currency_element.click()
+        selected_currency_element = self.find_element(by=By.XPATH, value='//*[@id="b2indexPage"]/div[19]/div/div/div/div/div[2]/div/div[3]/div/div/div/ul[1]/li[1]/button')
+        selected_currency_element.click()
