@@ -52,3 +52,23 @@ class Booking(webdriver.Chrome):
         check_in_element.click()
         check_out_element = self.find_element(by=By.CSS_SELECTOR, value=f'span[data-date="{check_out_date}"]')
         check_out_element.click()
+
+    def select_adults(self, count=1):
+        selection_element = self.find_element(by=By.CSS_SELECTOR, value='button[data-testid="occupancy-config"]')
+        selection_element.click()
+        while True:
+            decrease_adult_element= self.find_element(by=By.XPATH, value='//*[@id=":rf:"]/div/div[1]/div[2]/button[1]')
+            decrease_adult_element.click()
+            adults_value_element = self.find_element(by=By.ID,value='group_adults')
+            adults_value = adults_value_element.get_attribute('value')  #gets count for adults
+            if int(adults_value) == 1:
+                break
+
+        increase_button_element = self.find_element(by=By.XPATH, value='//*[@id=":rf:"]/div/div[1]/div[2]/button[2]')
+
+        for _ in range(count - 1):
+            increase_button_element.click()
+
+    def click_search(self):
+        search_button = self.find_element(by=By.CSS_SELECTOR, value='button[type="submit"]')
+        search_button.click()

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="208457cd-7be2-4d2f-bf05-23f4822cee0b" name="Changes" comment="Selecting the currency on the navbar">
+    <list default="true" id="208457cd-7be2-4d2f-bf05-23f4822cee0b" name="Changes" comment="Popout dismissal,&#10;Inserting search query &amp; selecting checkin,checkout date.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/booking/booking.py" beforeDir="false" afterPath="$PROJECT_DIR$/booking/booking.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
@@ -96,7 +96,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712085408100</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Popout dismissal,&#10;Inserting search query &amp; selecting checkin,checkout date.">
+      <option name="closed" value="true" />
+      <created>1712119722614</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712119722614</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,6 +121,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Setup and website configured" />
     <MESSAGE value="Selecting the currency on the navbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Selecting the currency on the navbar" />
+    <MESSAGE value="Popout dismissal,&#10;Inserting search query &amp; selecting checkin,checkout date." />
+    <option name="LAST_COMMIT_MESSAGE" value="Popout dismissal,&#10;Inserting search query &amp; selecting checkin,checkout date." />
   </component>
 </project>
