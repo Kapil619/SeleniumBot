@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="208457cd-7be2-4d2f-bf05-23f4822cee0b" name="Changes" comment="Selecting number of people,and implementing search.">
-      <change afterPath="$PROJECT_DIR$/booking/booking_filtration.py" afterDir="false" />
+    <list default="true" id="208457cd-7be2-4d2f-bf05-23f4822cee0b" name="Changes" comment="Applying filters on the search results &amp; sorting by lowest price">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/booking/booking.py" beforeDir="false" afterPath="$PROJECT_DIR$/booking/booking.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
@@ -25,6 +24,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Kapil619&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Kapil619/SeleniumBot.git",
+    "accountId": "21dbfa2a-7e51-43d8-acca-3e0ec7dd5e85"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -40,7 +51,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Codes/SeleniumBot/booking&quot;
+    &quot;last_opened_file_path&quot;: &quot;D:/Codes/SeleniumBot&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -75,7 +86,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-09665e90c3a7-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.15026.15" />
+        <option value="bundled-python-sdk-0509580d9d50-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.14494.241" />
       </set>
     </attachedChunks>
   </component>
@@ -120,7 +131,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712122844160</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Applying filters on the search results &amp; sorting by lowest price">
+      <option name="closed" value="true" />
+      <created>1712126094821</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712126094821</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -139,6 +158,7 @@
     <MESSAGE value="Selecting the currency on the navbar" />
     <MESSAGE value="Popout dismissal,&#10;Inserting search query &amp; selecting checkin,checkout date." />
     <MESSAGE value="Selecting number of people,and implementing search." />
-    <option name="LAST_COMMIT_MESSAGE" value="Selecting number of people,and implementing search." />
+    <MESSAGE value="Applying filters on the search results &amp; sorting by lowest price" />
+    <option name="LAST_COMMIT_MESSAGE" value="Applying filters on the search results &amp; sorting by lowest price" />
   </component>
 </project>

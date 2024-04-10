@@ -10,7 +10,9 @@ class Booking(webdriver.Chrome):
     def __init__(self, driver_path=r"C:\chromedriver.exe", teardown=False):
         self.driver_path = driver_path
         self.teardown = teardown
-        super(Booking, self).__init__()
+        options = webdriver.ChromeOptions()
+        options.add_experimental_option('excludeSwitches', ['enable-logging'])
+        super(Booking, self).__init__(options=options)
         self.implicitly_wait(15)
         self.maximize_window()
 
@@ -22,8 +24,7 @@ class Booking(webdriver.Chrome):
         self.get(const.BASE_URL)
 
     def change_currency(self, currency=None):
-        currency_element = self.find_element(by=By.XPATH,
-                                             value='//*[@id="b2indexPage"]/div[2]/div/div/header/nav[1]/div[2]/span[1]/button')
+        currency_element = self.find_element(by=By.XPATH,value='//*[@id="b2searchresultsPage"]/div[3]/div/div/header/nav[1]/div[2]/span[1]/button')
         currency_element.click()
         selected_currency_element = self.find_element(by=By.XPATH,
                                                       value='//*[@id="b2indexPage"]/div[19]/div/div/div/div/div[2]/div/div[3]/div/div/div/ul[1]/li[1]/button')
@@ -77,3 +78,11 @@ class Booking(webdriver.Chrome):
         filtration = BookingFiltration(driver=self)
         filtration.apply_star_rating(3, 4, 5)
         filtration.sort_price_lowest_first()
+
+    def report_results(self):
+        hotls = self.find_element(by=By.XPATH, value='//*[@id="bodyconstraint-inner"]/div[2]/div/div[2]/div[3]/div[2]/div[2]/div[3]/div[2]')
+        print(len(hotls))
+        return hotls
+        # hotels = self.find_element(by=By.CLASS_NAME, value='d4924c9e74').find_elements(by=By.CSS_SELECTOR, value='div[data-testid="property-card"]')
+        # return hotels
+
