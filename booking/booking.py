@@ -34,14 +34,14 @@ class Booking(webdriver.Chrome):
 
     def check_popup(self):
         try:
-            print('Entered popup function')
+            # print('Entered popup function')
             # popup = self.find_element(by=By.XPATH,
             #                           value='//*[@id="b2indexPage"]/div[21]/div/div/div/div[1]/div[1]/div/button')
             popup = self.find_element(by=By.CSS_SELECTOR, value='button[aria-label="Dismiss sign-in info."]')
-            print('Located element')
+            # print('Located element')
 
             popup.click()
-            print('Popup dismissed')
+            # print('Popup dismissed')
             return True
         except:
             return False
@@ -49,13 +49,13 @@ class Booking(webdriver.Chrome):
 
     def select_place_to_go(self, place_to_go):
         try:
-            print('Entered select_place_to_go function')
+            # print('Entered select_place_to_go function')
             search_field = self.find_element(by=By.XPATH, value='//*[@id=":re:"]')
-            print('Located search field')
+            # print('Located search field')
             search_field.clear()
             search_field.send_keys(place_to_go)
             search_field.click()
-            print('Clicked search field')
+            # print('Clicked search field')
             time.sleep(2)
             first_result = self.find_element(by=By.XPATH, value='//*[@id="autocomplete-result-0"]')
             first_result.click()
@@ -107,12 +107,12 @@ class Booking(webdriver.Chrome):
     def report_results(self):
         hotels = self.find_element(by=By.CLASS_NAME, value='d4924c9e74').find_elements(by=By.CSS_SELECTOR,
                                                                                        value='div[data-testid="property-card"]')
-        print(len(hotels))
+        # print(len(hotels))
         hotel_data = []
         for hotel in hotels:
             name = hotel.find_element(by=By.CSS_SELECTOR, value='div[data-testid="title"]').get_attribute(
                 'innerHTML').strip()
-            print(name)
+            # print(name)
             hotel_price = hotel.find_element(by=By.CSS_SELECTOR,
                                              value='span[data-testid="price-and-discounted-price"]').get_attribute(
                 'innerHTML').strip()

@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="208457cd-7be2-4d2f-bf05-23f4822cee0b" name="Changes" comment="Applying filters on the search results &amp; sorting by lowest price">
+    <list default="true" id="208457cd-7be2-4d2f-bf05-23f4822cee0b" name="Changes" comment="Added prettyTable package &amp; configured the table for output">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/booking/booking.py" beforeDir="false" afterPath="$PROJECT_DIR$/booking/booking.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking/booking_filtration.py" beforeDir="false" afterPath="$PROJECT_DIR$/booking/booking_filtration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712126094821</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added prettyTable package &amp; configured the table for output">
+      <option name="closed" value="true" />
+      <created>1712809144847</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1712809144847</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -158,6 +168,7 @@
     <MESSAGE value="Popout dismissal,&#10;Inserting search query &amp; selecting checkin,checkout date." />
     <MESSAGE value="Selecting number of people,and implementing search." />
     <MESSAGE value="Applying filters on the search results &amp; sorting by lowest price" />
-    <option name="LAST_COMMIT_MESSAGE" value="Applying filters on the search results &amp; sorting by lowest price" />
+    <MESSAGE value="Added prettyTable package &amp; configured the table for output" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added prettyTable package &amp; configured the table for output" />
   </component>
 </project>
